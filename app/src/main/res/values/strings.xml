@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Price Calculator</string>
+    <string name="_10_minus">-10%</string>
+    <string name="_7_minus">-7%</string>
+    <string name="_5_plus">+5%</string>
+    <string name="_10_plus">+10%</string>
 </resources>
