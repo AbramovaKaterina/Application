@@ -12,13 +12,20 @@
         android:layout_height="80dp"
         android:layout_marginTop="48dp"
         android:background="@color/white"
+        android:inputType="number"
+        android:lines="1"
         android:padding="10dp"
+        android:singleLine="true"
+        android:ems="100"
+
         android:textSize="21sp"
+        android:hint="Написати"
+        android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!--15 все решает. Хочу вводить только числа , получаю-->
 
     <Button
         android:id="@+id/again"
@@ -34,9 +41,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Веддіть ціну"
-        android:visibility="visible"
+        android:text="@string/inputPrice"
         android:textSize="40sp"
+        android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,6 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text=""
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus_ten"
         app:layout_constraintTop_toBottomOf="@+id/search"
         tools:layout_editor_absoluteX="88dp" />
 
